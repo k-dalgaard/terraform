@@ -1,5 +1,5 @@
 [
 {"name":"NET-172.17.20.0","vrf":"vrf01","subnets": [], "garp": false},
-{"name":"NET-10.45.99.0","vrf":"vrf01","subnets": ["10.45.99.1/24"], "garp": true}
+{"name":"NET-172.17.21.0","vrf":"vrf01","subnets": ["10.45.99.1/24"], "garp": true}
 
 ]
