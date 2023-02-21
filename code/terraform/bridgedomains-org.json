@@ -1,0 +1,4 @@
+[
+    {"vrf": "vrf01", "name": "NET-172.17.20.0", "subnets": []},
+    {"vrf": "vrf01", "name": "NET-172.17.21.0", "subnets": []}
+  ]

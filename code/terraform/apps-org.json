@@ -1,0 +1,6 @@
+{
+    "NC": [
+      {"name": "VLAN20", "bd": "NET-172.17.20.0", "vlan": "20", "prov": ["uni/tn-DAC/brc-vrf01-any"], "cons": ["uni/tn-DAC/brc-vrf01-any"], "domains": ["BARE-METAL"]},
+      {"name": "VLAN21", "bd": "NET-172.17.21.0", "vlan": "21", "prov": ["uni/tn-DAC/brc-vrf01-any"], "cons": ["uni/tn-DAC/brc-vrf01-any"], "domains": ["BARE-METAL"]}
+    ]
+  }

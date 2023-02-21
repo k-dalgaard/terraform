@@ -1,0 +1,23 @@
+Value Required INTERFACE (\S+)
+Value MAC (\S+)
+Value IPv4_Address (\d+\.\d+\.\d+\.\d+|\w+\.\w+\.\w+)
+Value DOMAIN (\S+)
+Value STATUS (\S+)
+Value Vlan (\S+)
+Value DEVICE_TYPE (\S+)
+Value USERNAME (\S+)
+Value DOT1X (\w+(?: \w+)?)
+Value MAB (\w+(?: \w+)?)
+
+
+Start
+  ^(Interface:|\s+Interface:)\s+${INTERFACE}  
+  ^\s+MAC Address:\s+${MAC} 
+  ^\s+IPv4 Address:\s+${IPv4_Address} 
+  ^\s+User-Name:\s+${USERNAME}
+  ^\s+Device-type:\s+${DEVICE_TYPE}
+  ^\s+Domain:\s+${DOMAIN} 
+  ^\s+Status:\s+${STATUS} 
+  ^\s+Vlan Group:\s+Vlan:\s+${Vlan}
+  ^\s+dot1x\s+${DOT1X}
+  ^\s+mab\s+${MAB} -> Record

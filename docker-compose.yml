@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  base:
+    image: kdalgaard/terraform
+    network_mode: host
+    container_name: terraform
+    volumes:
+      - ./code:/code
+    tty: true
+    working_dir: /code
+#    command: tail -F NONCE

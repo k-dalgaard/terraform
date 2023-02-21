@@ -1,0 +1,17 @@
+[
+    {
+        "domain": "CORE",
+        "vrf": "vrf01",
+        "vlan": 3201,
+        "mtu": 9000,
+        "bgp_remote_as": "64900",
+        "nodes": {
+            "101": {"pod": 1, "router_id": "172.22.1.101", "interfaces": [{"intf": 52, "addr": "172.22.1.5/31", "bgp_peer": "172.22.1.4"}]},
+            "102": {"pod": 1, "router_id": "172.22.1.102", "interfaces": [{"intf": 52, "addr": "172.22.1.7/31", "bgp_peer": "172.22.1.6"}]},
+            "203": {"pod": 2, "router_id": "172.22.1.203", "interfaces": [{"intf": 52, "addr": "172.22.1.9/31", "bgp_peer": "172.22.1.8"}]},
+            "204": {"pod": 2, "router_id": "172.22.1.204", "interfaces": [{"intf": 52, "addr": "172.22.1.11/31", "bgp_peer": "172.22.1.10"}]}
+        },
+        "prov": ["uni/tn-common/flt-default"],
+        "cons": ["uni/tn-common/flt-default"]
+    }
+]
